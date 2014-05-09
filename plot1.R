@@ -17,7 +17,6 @@ hpc$DateTime <- strptime(hpc$DateTime, format="%Y-%m-%d %H:%M:%S")
 
 ### create and save first PNG plot (with given size)
 png(file = "plot1.png", width = 480, height = 480, units='px', bg = "transparent")
-hist(hpc$Global_active_power, col=2, xlab="Global Active Power (kilowatts)" , 
-     main="Global Active Power", cex.lab=0.9, cex.main=0.9, cex.axis=0.9)
+hist(hpc$Global_active_power, col=2, xlab="Global Active Power (kilowatts)" ,  main="Global Active Power")
 dev.off()
 
